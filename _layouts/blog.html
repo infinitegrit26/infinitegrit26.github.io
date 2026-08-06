@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{%- assign page_title = page.title | append: " — Muskaan Hamid" -%}
+{%- assign page_description = page.description | default: site.description -%}
+<title>{{ page_title | escape }}</title>
+<meta name="description" content="{{ page_description | strip_html | escape }}" />
+<meta name="theme-color" content="#0c0d13" />
+{%- if page.external_url %}
+<link rel="canonical" href="{{ page.external_url }}" />
+<meta http-equiv="refresh" content="0; url={{ page.external_url }}" />
+<meta name="robots" content="noindex" />
+{%- else %}
+<link rel="canonical" href="{{ page.url | absolute_url }}" />
+{%- endif %}
+
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}" />
+<link rel="alternate" type="application/rss+xml" title="Muskaan Hamid — Blog" href="{{ '/feed.xml' | relative_url }}" />
+
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}" />
+<meta property="og:site_name" content="Muskaan Hamid" />
+<meta property="og:title" content="{{ page_title | escape }}" />
+<meta property="og:description" content="{{ page_description | strip_html | escape }}" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
+<meta property="og:image" content="{{ '/assets/og-image.png' | absolute_url }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Muskaan Hamid — Senior Software Engineer" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ page_title | escape }}" />
+<meta name="twitter:description" content="{{ page_description | strip_html | escape }}" />
+<meta name="twitter:image" content="{{ '/assets/og-image.png' | absolute_url }}" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}" />
+<script>
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+    document.documentElement.setAttribute('data-theme', saved || 'dark');
+  })();
+</script>
+</head>
+<body class="post-page">
+
+{% include blog-icons.html %}
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="{{ '/' | relative_url }}" class="logo" aria-label="Muskaan Hamid — home"><span class="logo-bracket">&lt;</span><span class="logo-mark">MH</span><span class="logo-bracket">&nbsp;/&gt;</span></a>
+    <div class="nav-actions">
+      {%- if page.layout == 'post' %}
+      <a class="post-back" href="{{ '/blog/index.html' | relative_url }}"><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>All posts</a>
+      {%- else %}
+      <a class="post-back" href="{{ '/' | relative_url }}"><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>Portfolio</a>
+      {%- endif %}
+      <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle light/dark mode">
+        <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+{{ content }}
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-logo">&lt;<span class="logo-mark">MH</span> /&gt;</span>
+    <p>Built with 🖤 by Muskaan Hamid · <span id="year"></span></p>
+  </div>
+</footer>
+
+<a href="#navbar" class="icon-btn back-to-top" id="backToTop" aria-label="Back to top">
+  <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+</a>
+
+<script src="{{ '/js/script.js' | relative_url }}"></script>
+</body>
+</html>

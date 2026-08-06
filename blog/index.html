@@ -1,0 +1,23 @@
+---
+layout: blog
+title: Blog
+description: Notes on distributed systems, cloud infrastructure, and agentic AI by Muskaan Hamid.
+---
+{%- comment -%}
+  This page lists every post automatically — you never need to edit it.
+  To publish: add a Markdown file to _posts/ (see _posts/2026-10-19-work-in-progress.md).
+  Medium stories are pulled in automatically each day.
+{%- endcomment -%}
+<section class="post blog-index">
+  <header class="post-header section-head">
+    <p class="section-kicker">Notes &amp; Writing</p>
+    <h1>Blog</h1>
+    <p class="blog-intro">Writing on distributed backend systems, cloud infrastructure, and agentic AI.</p>
+  </header>
+
+  <ol class="post-list card">
+    {%- for post in site.posts %}
+    {% include post-row.html post=post %}
+    {%- endfor %}
+  </ol>
+</section>

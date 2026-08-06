@@ -1,0 +1,16 @@
+{% comment %} Row in the all-posts list (blog/index.html). Pass post=... {% endcomment %}
+{%- assign post = include.post -%}
+<li>
+  <a class="post-row" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}"{% if post.external_url %} target="_blank" rel="noopener"{% endif %}>
+    <div class="post-row-meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <span>{% include read-time.html post=post %}</span>
+      {% if post.badge %}<span class="project-badge">{{ post.badge | escape }}</span>{% endif %}
+    </div>
+    <div class="post-row-body">
+      <h2>{{ post.title | escape }}</h2>
+      <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 220 }}</p>
+    </div>
+    <svg class="icon post-row-arrow" aria-hidden="true"><use href="{% if post.external_url %}#i-arrow-up-right{% else %}#i-arrow-right{% endif %}"/></svg>
+  </a>
+</li>

@@ -1,0 +1,33 @@
+---
+layout: blog
+---
+{%- if page.external_url %}
+<article class="post">
+  <header class="post-header">
+    <h1>{{ page.title | escape }}</h1>
+  </header>
+  <div class="prose">
+    <p>This post lives on Medium. Redirecting you there… If nothing happens, <a href="{{ page.external_url }}">read it on Medium</a>.</p>
+  </div>
+</article>
+{%- else %}
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+      <span aria-hidden="true">·</span>
+      <span>{% include read-time.html post=page %}</span>
+      {% if page.badge %}<span class="project-badge">{{ page.badge | escape }}</span>{% endif %}
+    </div>
+    <h1>{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <a class="btn btn-ghost btn-sm" href="{{ '/blog/index.html' | relative_url }}"><svg class="icon icon-back" aria-hidden="true"><use href="#i-arrow-right"/></svg>All posts</a>
+  </footer>
+</article>
+{%- endif %}

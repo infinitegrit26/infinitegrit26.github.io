@@ -1,0 +1,15 @@
+{% comment %} Blog card used on the home page. Pass post=... {% endcomment %}
+{%- assign post = include.post -%}
+<a class="post-card card" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}"{% if post.external_url %} target="_blank" rel="noopener"{% endif %}>
+  <div class="post-meta">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+    <span aria-hidden="true">·</span>
+    <span>{% include read-time.html post=post %}</span>
+  </div>
+  <h3>{{ post.title | escape }}</h3>
+  <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+  <div class="post-card-foot">
+    <span class="post-link">{% if post.external_url %}Read on Medium <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>{% else %}Read post <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>{% endif %}</span>
+    {% if post.badge %}<span class="project-badge">{{ post.badge | escape }}</span>{% endif %}
+  </div>
+</a>

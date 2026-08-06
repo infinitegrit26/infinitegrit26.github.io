@@ -1,0 +1,704 @@
+---
+# Home page. Rendered by Jekyll — the Blog section below fills itself from _posts/.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Muskaan Hamid — Portfolio</title>
+<meta name="description" content="Muskaan Hamid — Senior Software Engineer specializing in distributed systems, cloud infrastructure, and agentic AI." />
+<meta name="theme-color" content="#0c0d13" />
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="alternate" type="application/rss+xml" title="Muskaan Hamid — Blog" href="feed.xml" />
+
+<link rel="canonical" href="https://infinitegrit26.github.io/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Muskaan Hamid" />
+<meta property="og:title" content="Muskaan Hamid — Portfolio" />
+<meta property="og:description" content="Senior Software Engineer specializing in distributed systems, cloud infrastructure, and agentic AI." />
+<meta property="og:url" content="https://infinitegrit26.github.io/" />
+<meta property="og:image" content="https://infinitegrit26.github.io/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Muskaan Hamid — Senior Software Engineer" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Muskaan Hamid — Portfolio" />
+<meta name="twitter:description" content="Senior Software Engineer specializing in distributed systems, cloud infrastructure, and agentic AI." />
+<meta name="twitter:image" content="https://infinitegrit26.github.io/assets/og-image.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Muskaan Hamid",
+  "jobTitle": "Senior Software Engineer",
+  "description": "Senior Software Engineer specializing in distributed systems, cloud infrastructure, and agentic AI.",
+  "url": "https://infinitegrit26.github.io/",
+  "image": "https://infinitegrit26.github.io/assets/profile.jpg",
+  "email": "mailto:muskhan97@gmail.com",
+  "worksFor": { "@type": "Organization", "name": "Egen" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Savitribai Phule Pune University" },
+  "knowsAbout": ["Distributed systems", "Cloud infrastructure", "Agentic AI", "Java", "Python", "Kubernetes"],
+  "sameAs": [
+    "https://github.com/infinitegrit26",
+    "https://www.linkedin.com/in/muskaankhan97",
+    "https://medium.com/@muskhan97",
+    "https://leetcode.com/u/mhk97/"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<script>
+  // Set the theme before first paint to avoid a flash of the wrong colors.
+  // Defaults to dark mode unless the visitor has explicitly switched to light.
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+    var theme = saved || 'dark';
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+</head>
+<body>
+
+<!-- ============ ICON SPRITE ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- Brand icons (filled) -->
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 0 1 3.003-.404c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.807 5.625-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .319.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6.1 7.8-6.1H4.2Zm15.8 1.7-7.4 5.8a1 1 0 0 1-1.2 0L4 7.7v10.8a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5V7.7Z"/></symbol>
+  <symbol id="i-medium" viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.38-2.88-3.38-6.42s1.51-6.42 3.38-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75z"/></symbol>
+  <symbol id="i-leetcode" viewBox="0 0 24 24"><path d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4Zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4Z"/></symbol>
+  <!-- UI icons (stroked) -->
+  <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 13.4A8.5 8.5 0 1 1 10.6 3.5a6.6 6.6 0 0 0 9.9 9.9Z"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 9.5 12 5 2 9.5 12 14l10-4.5Z"/><path d="M6 11.6V16c3.3 2.4 8.7 2.4 12 0v-4.4M22 9.5V15"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M8.5 7V5.5a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2V7M3 12.5h18"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11.5a7 7 0 0 1 14 0C19 15 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4.5"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6.2L4.6 18.4A1.7 1.7 0 0 0 6.1 21h11.8a1.7 1.7 0 0 0 1.5-2.6L14 9.2V3"/><path d="M7.2 15h9.6"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 21h8M12 16.5V21M7 3.5h10V9a5 5 0 0 1-10 0V3.5Z"/><path d="M17 5h3v1.5A3.5 3.5 0 0 1 16.6 10M7 5H4v1.5A3.5 3.5 0 0 0 7.4 10"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.6 13.9 7.5 21l4.5-2.6 4.5 2.6-1.1-7.1"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5.5 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v.5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 4.8-9 4.8-9-4.8L12 3Z"/><path d="m3 12.2 9 4.8 9-4.8M3 16.4l9 4.6 9-4.6"/></symbol>
+  <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M10 3.5 11.8 8.2 16.5 10l-4.7 1.8L10 16.5l-1.8-4.7L3.5 10l4.7-1.8L10 3.5Z"/><path d="m18 14 .9 2.1L21 17l-2.1.9L18 20l-.9-2.1L15 17l2.1-.9L18 14Z"/></symbol>
+  <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19a4.5 4.5 0 0 0 .4-9A6 6 0 0 0 6.3 8.6 5.2 5.2 0 0 0 7 19h10.5Z"/></symbol>
+  <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="5.5" r="2.5"/><circle cx="6" cy="18.5" r="2.5"/><circle cx="18" cy="7.5" r="2.5"/><path d="M6 8v8M18 10c0 4.5-6.5 3.5-11 6.5"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8.2 12.2 2.6 2.6 5-5.6"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14m0 0-6-6m6 6-6 6"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10.5" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></symbol>
+</svg>
+
+<a class="skip-link" href="#about">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo" aria-label="Muskaan Hamid — back to top"><span class="logo-bracket">&lt;</span><span class="logo-mark">MH</span><span class="logo-bracket">&nbsp;/&gt;</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle light/dark mode">
+        <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <p class="hero-status"><span class="status-dot" aria-hidden="true"></span>Open to new opportunities</p>
+      <p class="hero-eyebrow">Hi there, I'm <span class="wave" aria-hidden="true">👋</span></p>
+      <h1 class="hero-name">Muskaan Hamid<span class="accent-dot">.</span></h1>
+      <p class="hero-role" aria-label="Senior Software Engineer, Distributed Systems Builder, Agentic AI Engineer">
+        <span class="role-prompt" aria-hidden="true">&gt;</span><span id="typed" aria-hidden="true"></span><span class="cursor" aria-hidden="true"></span>
+      </p>
+      <p class="hero-summary">
+        I build <strong>distributed backend systems</strong> and
+        <strong>agentic AI applications</strong> designed for production use.
+      </p>
+      <div class="hero-actions">
+        <a href="https://drive.google.com/file/d/12_9oWIiVk36duDXu8-OslOK0WnHOG7lQ/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener">
+          Download Resume
+          <svg class="icon icon-down" aria-hidden="true"><use href="#i-download"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <span class="hero-socials-label">Find me</span>
+        <a class="icon-btn" href="https://github.com/infinitegrit26" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg class="icon icon-fill" aria-hidden="true"><use href="#i-github"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/muskaankhan97" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg class="icon icon-fill" aria-hidden="true"><use href="#i-linkedin"/></svg>
+        </a>
+        <a class="icon-btn" href="mailto:muskhan97@gmail.com" aria-label="Email" title="Email">
+          <svg class="icon icon-fill" aria-hidden="true"><use href="#i-mail"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="portrait">
+        <div class="portrait-frame">
+          <picture>
+            <source srcset="assets/profile.webp" type="image/webp" />
+            <img src="assets/profile.jpg" alt="Muskaan Hamid" width="425" height="425" fetchpriority="high" onerror="this.closest('.portrait-frame').classList.add('is-missing')" />
+          </picture>
+          <div class="photo-fallback">📷<span>Add assets/profile.jpg</span></div>
+        </div>
+      </div>
+      <div class="portrait-badge badge-exp">
+        <span class="badge-num">7+</span>
+        <span><strong>Years</strong>software engineering</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="section-kicker">Get To Know More</p>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="about-lead">
+          I'm a <strong>Senior Software Engineer</strong> with <strong>7+ years</strong> of experience building
+          distributed backend systems for healthcare, retail, finance,
+          telecommunications, and legal tech. My recent work focuses on
+          reliable <strong>agentic AI</strong> applications.
+        </p>
+      </div>
+      <ul class="about-facts card">
+        <li>
+          <span class="fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span>
+          <span><span class="fact-label">Education</span>BE in Computer Engineering, Savitribai Phule Pune University</span>
+        </li>
+        <li>
+          <span class="fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg></span>
+          <span><span class="fact-label">Experience</span>7+ years of software engineering experience</span>
+        </li>
+        <li>
+          <span class="fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+          <span><span class="fact-label">Location</span>India · Remote</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section-alt" id="skills">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="section-kicker">What I Work With</p>
+      <h2 class="section-title">Skills &amp; Tech Stack</h2>
+    </div>
+    <div class="skills-groups" id="skillsGrid">
+      <div class="skills-group card">
+        <div class="skills-group-head">
+          <h3 class="skills-group-title"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>Languages</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">Java</div>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">Kotlin</div>
+          <div class="skill-card">SQL</div>
+          <div class="skill-card">JavaScript</div>
+        </div>
+      </div>
+      <div class="skills-group card">
+        <div class="skills-group-head">
+          <h3 class="skills-group-title"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg>Backend &amp; Architecture</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">Spring Boot</div>
+          <div class="skill-card">FastAPI</div>
+          <div class="skill-card">Drools</div>
+          <div class="skill-card">Resilience4j</div>
+          <div class="skill-card">Microservices</div>
+          <div class="skill-card">Event-driven design</div>
+        </div>
+      </div>
+      <div class="skills-group card">
+        <div class="skills-group-head">
+          <h3 class="skills-group-title"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg>Agentic AI &amp; ML</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">Microsoft Agent Framework</div>
+          <div class="skill-card">Google ADK</div>
+          <div class="skill-card">LangGraph</div>
+          <div class="skill-card">MCP</div>
+          <div class="skill-card">RAG</div>
+          <div class="skill-card">Mosaic AI Vector Search</div>
+          <div class="skill-card">PyTorch</div>
+          <div class="skill-card">Hugging Face Transformers</div>
+          <div class="skill-card">LangSmith</div>
+          <div class="skill-card">Langfuse</div>
+        </div>
+      </div>
+      <div class="skills-group card">
+        <div class="skills-group-head">
+          <h3 class="skills-group-title"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg>Data &amp; Messaging</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">PostgreSQL</div>
+          <div class="skill-card">MySQL</div>
+          <div class="skill-card">Oracle</div>
+          <div class="skill-card">MongoDB</div>
+          <div class="skill-card">Redis</div>
+          <div class="skill-card">BigQuery</div>
+          <div class="skill-card">Apache Kafka</div>
+          <div class="skill-card">RabbitMQ</div>
+          <div class="skill-card">Talend</div>
+        </div>
+      </div>
+      <div class="skills-group card">
+        <div class="skills-group-head">
+          <h3 class="skills-group-title"><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg>Cloud</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">AWS</div>
+          <div class="skill-card">GCP</div>
+          <div class="skill-card">Azure (Beginner)</div>
+        </div>
+      </div>
+      <div class="skills-group card">
+        <div class="skills-group-head">
+          <h3 class="skills-group-title"><svg class="icon" aria-hidden="true"><use href="#i-branch"/></svg>DevOps</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">Docker</div>
+          <div class="skill-card">Kubernetes</div>
+          <div class="skill-card">Helm</div>
+          <div class="skill-card">ArgoCD</div>
+          <div class="skill-card">Harness CI</div>
+          <div class="skill-card">Jenkins</div>
+          <div class="skill-card">Bamboo</div>
+          <div class="skill-card">GitHub Actions</div>
+        </div>
+      </div>
+      <div class="skills-group card">
+        <div class="skills-group-head">
+          <h3 class="skills-group-title"><svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>Testing &amp; Quality</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">JUnit</div>
+          <div class="skill-card">Mockito</div>
+          <div class="skill-card">Karate</div>
+          <div class="skill-card">Sonar</div>
+          <div class="skill-card">Coverity</div>
+        </div>
+      </div>
+      <div class="skills-group card">
+        <div class="skills-group-head">
+          <h3 class="skills-group-title"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Security</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">Spring Security</div>
+          <div class="skill-card">Okta</div>
+          <div class="skill-card">Apigee</div>
+          <div class="skill-card">AWS Cognito</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="section-kicker">Where I've Worked</p>
+      <h2 class="section-title">Work Experience</h2>
+    </div>
+    <div class="timeline">
+      <article class="timeline-item is-current">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card card">
+          <div class="timeline-header">
+            <h3>Senior Software Engineer</h3>
+            <span class="timeline-date">Feb 2023 — Present</span>
+          </div>
+          <p class="timeline-company">Egen · Remote</p>
+
+          <div class="timeline-client-block">
+            <div class="timeline-client-row">
+              <h4 class="timeline-client">Cardinal Health</h4>
+              <span class="timeline-client-meta">Healthcare · May 2026 — Present</span>
+            </div>
+            <ul>
+              <li>Currently migrating OptiFreight from VMware Tanzu to GKE across application code, Kubernetes configuration, deployment pipelines, and infrastructure.</li>
+              <li>Designed a multi-app deployment strategy that ships several applications from one codebase, meeting a client requirement and removing external-team dependencies.</li>
+              <li>Leading the GemFire-to-Redis migration and GitOps deployments with Helm, Harness CI, and ArgoCD; guiding engineers through compatibility issues and coordinating with DevOps, infrastructure, and client teams.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-client-block">
+            <div class="timeline-client-row">
+              <h4 class="timeline-client">AIA Contract Documents</h4>
+              <span class="timeline-client-meta">Legal Tech · Feb 2026 — Apr 2026</span>
+            </div>
+            <ul>
+              <li>Helped deliver Catina, an agentic contract assistant using OpenAI and Microsoft Agent Framework to route queries to RAG over Databricks Mosaic AI Vector Search, MCP-based MongoDB tools, or conversational agents.</li>
+              <li>Architected FastAPI microservices with MongoDB models and Docker for multi-tenant workloads, ready for Azure Container Apps.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-client-block">
+            <div class="timeline-client-row">
+              <h4 class="timeline-client">Ahold Delhaize USA</h4>
+              <span class="timeline-client-meta">Grocery Retail · Feb 2023 — Jan 2026</span>
+            </div>
+            <ul>
+              <li>Designed an order-lifecycle state machine for <strong>2,000+ stores</strong>, reducing order-handling errors by <strong>30%</strong>.</li>
+              <li>Migrated core cart functionality from a monolith to a dedicated cart-calculation microservice, improving checkout scalability and maintainability.</li>
+              <li>Expanded pick-from-store into omnichannel fulfillment. Designed Central Fulfillment services with a Strategy-pattern engine for dynamic batch assignment and led warehouse components for Peapod Handheld Services.</li>
+              <li>Automated EBT order cancellations and refunds, cutting manual order-management effort by <strong>80%</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card card">
+          <div class="timeline-header">
+            <h3>Freelance Software Engineer</h3>
+            <span class="timeline-date">Jun 2021 — Jul 2025</span>
+          </div>
+          <p class="timeline-company">Freelance · Talent as a Service · Part-time · Remote</p>
+
+          <div class="timeline-client-block">
+            <div class="timeline-client-row">
+              <h4 class="timeline-client">Telstra</h4>
+              <span class="timeline-client-meta">Telecommunications · Jan 2022 — Jul 2025</span>
+            </div>
+            <ul>
+              <li>Sole BFF engineer for the Thor and Apollo teams, owning MyTelstra API delivery for <strong>5M+ users</strong> alongside a 10-member Android, iOS, web, and QA team.</li>
+              <li>Extended <strong>50+ MyTelstra APIs</strong> to Boost Mobile, JB Hi-Fi, and The Good Guys, enabling reuse across their apps and sites and reducing onboarding time by <strong>60%</strong>.</li>
+              <li>Standardized dependencies across 50+ microservices with a shared parent POM. Built an off-peak Bamboo pipeline for Coverity scans, reducing security-review turnaround by <strong>80%</strong>.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-client-block">
+            <div class="timeline-client-row">
+              <h4 class="timeline-client">Lowe's</h4>
+              <span class="timeline-client-meta">Home Improvement Retail · Jun 2021 — Jan 2022</span>
+            </div>
+            <ul>
+              <li>Designed architecture and selected the technology stack for new backend services, translating business processes and UI requirements into technical designs with stakeholders.</li>
+              <li>Built reactive Java microservices with Kafka on GCP and Node.js REST APIs for external integrations, including a workflow engine for automated data-quality checks.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card card">
+          <div class="timeline-header">
+            <h3>Senior Software Engineer</h3>
+            <span class="timeline-date">Apr 2021 — Jan 2023</span>
+          </div>
+          <p class="timeline-company">EPAM Systems · Remote</p>
+
+          <div class="timeline-client-block">
+            <div class="timeline-client-row">
+              <h4 class="timeline-client">Broadridge</h4>
+              <span class="timeline-client-meta">Financial Services</span>
+            </div>
+            <ul>
+              <li>Owned Trade Cache real-time enrichment for Drools rule execution on a trading platform processing <strong>100K+ transactions daily</strong>.</li>
+              <li>Re-engineered Trade Cache, replacing <strong>10+ sequential stored-procedure calls</strong> per request with parallel Java CompletableFuture batch fetches. Tuned queries with DBAs using covering indexes, set-based operations, and CTEs, cutting API response time by <strong>65%</strong>.</li>
+              <li>Raised unit-test coverage from <strong>45% to 85%</strong>, removed <strong>200+ code smells</strong>, and helped reduce production defects by <strong>30%</strong>.</li>
+              <li>Defined attribute-enrichment requirements with business analysts, delivered user stories end to end, and led QA bug triage.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card card">
+          <div class="timeline-header">
+            <h3>Software Engineer</h3>
+            <span class="timeline-date">Jun 2019 — Mar 2021</span>
+          </div>
+          <p class="timeline-company">Mediaocean · Pune, MH</p>
+          <ul>
+            <li>Built REST and RabbitMQ MDM APIs serving consistent, product-specific data to Prisma, Ignitia, and Lumina.</li>
+            <li>Automated Talend extract triggers and built DAP ETL jobs to keep warehouse data accurate.</li>
+            <li>Led migration of the <strong>2TB+ DAP warehouse</strong> from Greenplum to Oracle and resolved production data discrepancies blocking reporting.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card card">
+          <div class="timeline-header">
+            <h3>Associate Software Engineer</h3>
+            <span class="timeline-date">Aug 2018 — Jun 2019</span>
+          </div>
+          <p class="timeline-company">Persistent Systems · Pune, MH</p>
+          <ul>
+            <li>Joined through the Kiran Foundation scholarship program and built a Python risk analytics platform for Thermo Fisher Scientific on AWS. Integrated Okta and Active Directory with Cognito, and used Lambda, API Gateway, CloudWatch, and SNS for serverless, event-driven workflows.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section section-alt" id="projects">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="section-kicker">Selected Applied AI Work</p>
+      <h2 class="section-title">AI Projects</h2>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card card is-featured">
+        <div class="project-body">
+          <div class="project-top">
+            <span class="project-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+            <span class="project-index">01</span>
+          </div>
+          <span class="featured-label">Featured · Open source</span>
+          <h3>Sonar Remediation Agent</h3>
+          <p>Fixes Sonar-flagged maintainability issues and vulnerabilities with deterministic changes first and an LLM fallback. Every fix is verified with a real build before human review.</p>
+          <div class="project-tags">
+            <span>Sonar</span>
+            <span>LLM agent</span>
+            <span>Build verification</span>
+          </div>
+          <a href="https://github.com/infinitegrit26/sonar-cve-agent" target="_blank" rel="noopener" class="btn btn-ghost btn-sm project-link">
+            <svg class="icon icon-fill" aria-hidden="true"><use href="#i-github"/></svg>
+            View on GitHub
+            <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          </a>
+        </div>
+        <ol class="pipeline" aria-label="How the agent processes each issue">
+          <li class="pipeline-head" aria-hidden="true"><i></i><i></i><i></i><span>remediation flow</span></li>
+          <li>Sonar-flagged issue</li>
+          <li class="is-key">Deterministic fix <span class="pipeline-note">first</span></li>
+          <li>LLM fallback <span class="pipeline-note">if needed</span></li>
+          <li class="is-key">Real build verification</li>
+          <li>Human review</li>
+        </ol>
+      </article>
+
+      <article class="project-card card">
+        <div class="project-top">
+          <span class="project-icon"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg></span>
+          <div class="project-meta">
+            <span class="project-badge">In progress</span>
+            <span class="project-index">02</span>
+          </div>
+        </div>
+        <h3>Contract Clause Classifier</h3>
+        <p>Fine-tuning DistilBERT on public contract clauses and calibrating confidence to route uncertain predictions to human review.</p>
+        <div class="project-tags">
+          <span>DistilBERT</span>
+          <span>PyTorch</span>
+          <span>Human review</span>
+        </div>
+      </article>
+
+      <article class="project-card card">
+        <div class="project-top">
+          <span class="project-icon"><svg class="icon" aria-hidden="true"><use href="#i-flask"/></svg></span>
+          <span class="project-index">03</span>
+        </div>
+        <h3>TrialMind</h3>
+        <p>Co-built an AI tool that turns clinical-trial design questions into cited evidence reviews using public data.</p>
+        <div class="project-tags">
+          <span>Egen ideathon</span>
+          <span>Team project</span>
+          <span>Evidence review</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section" id="education">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="section-kicker">Where I Studied</p>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <div class="timeline">
+      <article class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card card">
+          <div class="timeline-header">
+            <h3>Bachelor of Engineering in Computer Engineering</h3>
+            <span class="timeline-date">Jul 2014 — May 2018</span>
+          </div>
+          <p class="timeline-company">Savitribai Phule Pune University · Pune, MH</p>
+          <ul>
+            <li>Graduated with First Class with Distinction in all four years.</li>
+            <li>Named Best Outgoing Student of the department and institute. The institute award was decided through interviews among top-ranked students from <strong>8 departments</strong>.</li>
+            <li>Received scholarships from the Lila Poonawalla Foundation (LPF) and the Kiran Foundation for all four years.</li>
+            <li>Selected as an LPF Peace Ambassador in 2016, one of <strong>25 women</strong> chosen from hundreds of applicants for a month-long Wholesome Leadership program at the Asha Centre, UK.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section class="section section-alt" id="achievements">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="section-kicker">Milestones</p>
+      <h2 class="section-title">Achievements &amp; Certifications</h2>
+    </div>
+    <div class="achievements-grid">
+      <div class="achievement-card card">
+        <span class="ach-icon"><svg class="icon" aria-hidden="true"><use href="#i-trophy"/></svg></span>
+        <div>
+          <h3>Pragmatic Delivery Award</h3>
+          <p>Q4 2025 · Egen</p>
+        </div>
+      </div>
+      <div class="achievement-card card">
+        <span class="ach-icon"><svg class="icon" aria-hidden="true"><use href="#i-trophy"/></svg></span>
+        <div>
+          <h3>Digital Excellence Award</h3>
+          <p>Q4 2023 · Telstra</p>
+        </div>
+      </div>
+      <div class="achievement-card card">
+        <span class="ach-icon"><svg class="icon" aria-hidden="true"><use href="#i-trophy"/></svg></span>
+        <div>
+          <h3>Star Performer Award</h3>
+          <p>Q3 2020 · Mediaocean</p>
+        </div>
+      </div>
+      <div class="achievement-card card">
+        <span class="ach-icon"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span>
+        <div>
+          <h3>AWS Certified Developer – Associate</h3>
+          <p>Certification</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<!-- Shows the 3 most recent posts automatically. To publish, add a Markdown file to _posts/. -->
+<section class="section" id="blog">
+  <div class="section-inner">
+    <div class="section-head section-head-row">
+      <div>
+        <p class="section-kicker">Notes &amp; Writing</p>
+        <h2 class="section-title">Blog</h2>
+      </div>
+      <a class="btn btn-ghost btn-sm" href="blog/index.html">All posts <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+    </div>
+    <div class="posts-grid">
+      {%- for post in site.posts limit: 3 %}
+      {% include post-card.html post=post %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact-section" id="contact">
+  <div class="section-inner">
+    <div class="contact-panel card">
+      <div class="contact-inner">
+        <p class="section-kicker">Get In Touch</p>
+        <h2 class="contact-title">Let's Talk<span class="accent-dot">.</span></h2>
+        <p class="contact-copy">
+          Open to new opportunities and thoughtful collaborations.
+        </p>
+        <div class="contact-actions">
+          <a href="mailto:muskhan97@gmail.com" class="btn btn-primary btn-lg">Say Hello 👋</a>
+          <button type="button" class="btn btn-ghost btn-lg copy-email" id="copyEmail" data-email="muskhan97@gmail.com">
+            <svg class="icon icon-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+            <svg class="icon icon-check" aria-hidden="true"><use href="#i-check"/></svg>
+            <span class="copy-email-label">muskhan97@gmail.com</span>
+          </button>
+        </div>
+        <div class="contact-socials">
+          <a class="icon-btn" href="https://github.com/infinitegrit26" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <svg class="icon icon-fill" aria-hidden="true"><use href="#i-github"/></svg>
+          </a>
+          <a class="icon-btn" href="mailto:muskhan97@gmail.com" aria-label="Email" title="Email">
+            <svg class="icon icon-fill" aria-hidden="true"><use href="#i-mail"/></svg>
+          </a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/muskaankhan97" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+            <svg class="icon icon-fill" aria-hidden="true"><use href="#i-linkedin"/></svg>
+          </a>
+          <a class="icon-btn" href="https://medium.com/@muskhan97" target="_blank" rel="noopener" aria-label="Medium" title="Medium">
+            <svg class="icon icon-fill" aria-hidden="true"><use href="#i-medium"/></svg>
+          </a>
+          <a class="icon-btn" href="https://leetcode.com/u/mhk97/" target="_blank" rel="noopener" aria-label="LeetCode" title="LeetCode">
+            <svg class="icon icon-fill" aria-hidden="true"><use href="#i-leetcode"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-logo">&lt;<span class="logo-mark">MH</span> /&gt;</span>
+    <p>Built with 🖤 by Muskaan Hamid · <span id="year"></span></p>
+  </div>
+</footer>
+
+<a href="#hero" class="icon-btn back-to-top" id="backToTop" aria-label="Back to top">
+  <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b6224e"/>
+      <stop offset="0.5" stop-color="#8b3f9e"/>
+      <stop offset="1" stop-color="#4f6bed"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="8" fill="url(#g)"/>
+  <text x="16" y="21" font-family="'Fira Code', ui-monospace, monospace" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">MH</text>
+</svg>

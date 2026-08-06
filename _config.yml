@@ -1,0 +1,38 @@
+# Site settings for Jekyll (GitHub Pages builds the site from these).
+title: Muskaan Hamid
+description: Senior Software Engineer specializing in distributed systems, cloud infrastructure, and agentic AI.
+url: https://infinitegrit26.github.io
+baseurl: ""
+author: Muskaan Hamid
+timezone: Asia/Kolkata
+
+# Medium account whose stories are pulled into the blog automatically
+# (see .github/scripts/import_medium.py). Leave empty to turn this off.
+medium_username: muskhan97
+
+# Medium stories to leave off the blog. Add the story's ID — the code at the end
+# of its URL (e.g. medium.com/@you/my-story-103c46c2288e → "103c46c2288e").
+medium_hide: ["103c46c2288e"]  # "Oy, Hello There!" (2021 test post)
+
+# Blog posts live in _posts/ as Markdown and are published at /blog/<title>.html
+permalink: /blog/:title:output_ext
+markdown: kramdown
+
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - preview.ps1
+  - tools
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

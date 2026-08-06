@@ -1,0 +1,26 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated automatically from _posts/ (including imported Medium stories). Don't edit by hand. -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Muskaan Hamid — Blog</title>
+    <link>{{ '/blog/index.html' | absolute_url }}</link>
+    <atom:link href="{{ '/feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
+    <description>Notes on distributed systems, cloud infrastructure, and agentic AI by Muskaan Hamid.</description>
+    <language>en</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    {%- for post in site.posts limit: 20 %}
+    {%- if post.external_url %}{% assign link = post.external_url %}{% else %}{% assign link = post.url | absolute_url %}{% endif %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      <link>{{ link | xml_escape }}</link>
+      <guid isPermaLink="true">{{ link | xml_escape }}</guid>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <description>{{ post.description | default: post.excerpt | strip_html | strip_newlines | xml_escape }}</description>
+    </item>
+    {%- endfor %}
+  </channel>
+</rss>
